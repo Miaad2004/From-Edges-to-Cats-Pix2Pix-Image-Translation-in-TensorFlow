@@ -3,7 +3,6 @@
 > Generating cat images from sketches using a conditional generative adversarial network (pix2pix) in TensorFlow
 
 ## Web Application
-[![Build Status](https://badges.netlify.app/api/edges2cats.svg?branch=master)](https://app.netlify.com/sites/edges2cats/deploys)
 View a live demo of this project on netlify [netlify](https://edges2cats.netlify.com)
 
 <p align="center">
