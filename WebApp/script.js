@@ -168,7 +168,7 @@ async function generateAndShowImage()
   await new Promise(resolve => image.onload = resolve);
 
   // Convert to tensor
-  const imageTensor = tf.browser.fromPixels(image).toFloat();
+  const imageTensor = tf.browser.fromPixels(image);
 
   // Resize
   const resized1 = imageTensor.resizeBilinear([256,256])
