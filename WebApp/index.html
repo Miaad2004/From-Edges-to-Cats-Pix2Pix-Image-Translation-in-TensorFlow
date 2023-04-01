@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edges2Cats</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@4.2.0"></script>
+</head>
+
+<body>
+  <h1 class="text" id="title">Edges to Cats</h1>
+  <h2 class="text" id="title">Draw on the left canvas and press generate. Image generation could take a while, depending on your hardware.</h1>
+  <video id="background-video" autoplay loop muted>
+    <source src="bg.mp4" type="video/mp4">
+  </video>
+
+  <canvas id="input-canvas"></canvas>
+  <canvas id="output-canvas" ></canvas>
+  <h3 class="text">Pencil/Eraser</h3>
+  <button id="generateButton" class="generate-button">Generate</button>
+  <button id="randomButton" class="random-button">Random</button>
+  <label class="switch">
+    <input type="checkbox" id="toggle-switch" name="toggle-switch" onclick="swapDrawingColor();">
+    <span class="slider"></span>
+  </label>
+  
+
+  <footer>
+    <p>Created by Miaad Kimiagari</p>
+    <p>Code available on <a href="https://github.com/Miaad2004/From-Edges-to-Cats-Pix2Pix-Image-Translation">Github</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

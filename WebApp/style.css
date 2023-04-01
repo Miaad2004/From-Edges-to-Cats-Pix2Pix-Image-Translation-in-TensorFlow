@@ -1,0 +1,215 @@
+body {
+  min-height: 100vh;
+  background: linear-gradient(rgba(63, 208, 212, 0.5), rgba(0, 0, 0, 0.7)), center/cover no-repeat;
+}
+
+#background-video {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  filter: blur(5px); 
+}
+
+#input-canvas {
+  position: absolute;
+  top: 35%;
+  left: 25%;
+  transform: translate(-50%, -7%);
+  width: 256px;
+  height: 256px;
+  max-width: 256px;
+  background-color: white;
+  border: 1px solid black;
+ 
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10"><rect x="4.5" y="0" width="0.5" height="10" fill="red"/><rect x="0" y="4.5" width="10" height="0.5" fill="red"/></svg>') 15 15, crosshair;
+}
+
+#output-canvas{
+  position: absolute;
+  top: 35%;
+  left: 75%;
+  transform: translate(-50%, -7%);
+  width: 256px;
+  height: 256px;
+  max-width: 265px;
+  border: 1px solid black;
+}
+
+.generate-button {
+  display: block;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -7%);
+  padding: 20px 40px;
+  font-size: 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.generate-button:hover {
+  background-color: rgb(212, 21, 184);
+}
+
+.generate-button.disabled {
+  background-color: gray;
+}
+
+.random-button {
+  display: block;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -7%);
+  padding: 20px 40px;
+  font-size: 16px;
+  background-color: #1cd8bf;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.random-button:hover {
+  background-color: rgb(212, 21, 184);
+}
+
+.text {
+  display: inline-block;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  position: absolute;
+  top: 7%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 3px solid #ff08ac;
+  padding: 20px;
+  width: 50%;
+}
+
+h2 {
+	position: absolute;
+	top: 20%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 3px solid #32a893;
+	padding: 5px;
+	width: 50%;
+}
+
+h3 {
+	position: absolute;
+	top: 67%;
+	left: 25%;
+	transform: translate(-50%, -50%);
+	border: 3px solid #32a893;
+	padding: 5px;
+	width: 15%;
+}
+
+.switch {
+	  position: absolute;
+    top: 74%;
+    left: 25%;
+	  transform: translate(-40%);
+    display: inline-block;
+    width: 78px;
+    height: 44.2px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #9dbf08;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 33.8px;
+    width: 33.8px;
+    left: 5.2px;
+    bottom: 5.2px;
+    background-color: rgb(231, 12, 165);
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(33.8px);
+    -ms-transform: translateX(33.8px);
+    transform: translateX(33.8px);
+}
+
+.label-left
+{
+  padding-left: 7px;
+  position: absolute;
+  top: 25%;
+  left: 10%;
+}
+
+.label-right
+{
+  padding-left: 7px;
+  position: absolute;
+  top: 25%;
+  left: 100%;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  opacity: 0.8;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  margin: 0;
+  padding: 5px;
+}
