@@ -142,7 +142,7 @@ async function loadModel()
   if (typeof model == 'undefined')
   {
     // Ask for user confirmation
-    disableGenerateButton("Downloading the model...");
+    disableGenerateButton("Downloading the model(200 MB)...");
 
     // Download the model if it's not cached
     model = await tf.loadLayersModel(modelUrl);
