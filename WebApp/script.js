@@ -1,4 +1,4 @@
-const modelUrl = 'model-TFJS/model.json';
+const modelUrl = 'https://raw.githubusercontent.com/Miaad2004/From-Edges-to-Cats-Pix2Pix-Image-Translation-in-TensorFlow/main/WebApp/model-TFJS/model.json';
 
 let gray = '#1c1c1b';
 let white = '#ffffff';
