@@ -101,8 +101,8 @@ function setCanvasImageRandomly()
   var randomIndex = Math.floor(Math.random() * numSamples);
   randomIndex = String(randomIndex).padStart(2, '0');
 
-  const inputImageUrl = `samples/i${randomIndex}.jpg`;
-  const outputImageUrl = `samples/o${randomIndex}.jpg`;
+  const inputImageUrl = `https://raw.githubusercontent.com/Miaad2004/From-Edges-to-Cats-Pix2Pix-Image-Translation-in-TensorFlow/main/WebApp/samples/i${randomIndex}.jpg`;
+  const outputImageUrl = `https://raw.githubusercontent.com/Miaad2004/From-Edges-to-Cats-Pix2Pix-Image-Translation-in-TensorFlow/main/WebApp/samples/o${randomIndex}.jpg`;
 
   setCanvasImage(inputCTX, inputImageUrl);
   setCanvasImage(outputCTX, outputImageUrl);
