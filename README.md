@@ -10,5 +10,5 @@
 
 ## Samples
 <p align="center">
-  <img src="" />
+  <img src="https://github.com/Miaad2004/From-Edges-to-Cats-Pix2Pix-Image-Translation/blob/main/Screenshots/1.png" />
 </p>
